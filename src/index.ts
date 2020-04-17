@@ -7,7 +7,7 @@ var port = 3800;
 
 // Conexión Database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/minimo1', {useMongoClient: true})
+mongoose.connect('mongodb://localhost:27017/Examen', {useMongoClient: true})
   .then(() => {
       console.log("La conexión a la base de datos minimo1 se ha realizado correctamente!!!!");
 

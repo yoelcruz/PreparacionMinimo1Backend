@@ -2,6 +2,7 @@ import { Subject } from '../models/subject';
 import { Student } from '../models/student';
 
 async function getSubjects(req:any, res:any) {
+    console.log('Entramos en getSubjects');
     const subjects = await Subject.find().exec();
     //const subjects = await Subject.find().populate('students').exec();        
     return res.status(200).send(subjects);
